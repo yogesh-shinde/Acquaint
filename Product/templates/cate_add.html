@@ -1,0 +1,15 @@
+{% load rest_framework %}
+
+<html>
+  <head>
+    <title>Add</title>
+  </head>
+  <body>
+    <h1>Add Category</h1>
+
+    <form action="{% url 'create-category' %}" method="POST">
+      {% csrf_token %} {% render_form serializer %}
+      <input type="submit" value="Save" />
+    </form>
+  </body>
+</html>

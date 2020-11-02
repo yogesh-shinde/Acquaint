@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1 align="center">Owner List</h1>
+    <table align="center">
+      <tr>
+        <td>user Id</td>
+        <td>user Name</td>
+        <td>Username</td>
+        <td>Email Id</td>
+        <td>Contact</td>
+      </tr>
+      {% for o in owners%}
+      <tr>
+        <td>{{ o.owner_id}}</td>
+        <td>{{ o.owner_name}}</td>
+        <td>{{o.owner_username}}</td>
+        <td>{{o.owner_email}}</td>
+        <td>{{o.owner_contact }}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+  </body>
+</html>

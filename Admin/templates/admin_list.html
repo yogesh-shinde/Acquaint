@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1 align="center">Admin List</h1>
+    <table align="center">
+      <tr>
+        <td>Admin Id</td>
+        <td>Admin Name</td>
+        <td>Username</td>
+        <td>Email Id</td>
+        <td>Contact</td>
+      </tr>
+      {% for a in admins%}
+      <tr>
+        <td>{{ a.admin_id}}</td>
+        <td>{{ a.admin_name}}</td>
+        <td>{{a.admin_username}}</td>
+        <td>{{a.admin_email}}</td>
+        <td>{{a.admin_contact }}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+  </body>
+</html>

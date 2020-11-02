@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1 align="center">Product List</h1>
+    <table align="center">
+      <tr>
+        <td>Product Id</td>
+        <td>Product Name</td>
+        <td>Product Code</td>
+        <td>Product Price</td>
+        <td>Manufacture Date</td>
+        <td>Expiry Date</td>
+        <td>Owner Name</td>
+      </tr>
+      {% for sub in products%}
+      <tr>
+        <td>{{ sub.product_id}}</td>
+        <td>{{ sub.product_name}}</td>
+        <td>{{ sub.product_code}}</td>
+        <td>{{ sub.product_price}}</td>
+        <td>{{ sub.manufacture_date}}</td>
+        <td>{{ sub.expiry_date}}</td>
+        <td>{{ sub.product_owner}}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+  </body>
+</html>

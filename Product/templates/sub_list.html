@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1 align="center">Subcategory List</h1>
+    <table align="center">
+      <tr>
+        <td>Subcategory Id</td>
+        <td>Subcategory Name</td>
+      </tr>
+      {% for cat in subcategory%}
+      <tr>
+        <td>{{ cat.subcategory_id}}</td>
+        <td>{{ cat.subcategory_name}}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+  </body>
+</html>
